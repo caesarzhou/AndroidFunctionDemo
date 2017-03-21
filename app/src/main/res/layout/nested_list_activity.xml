@@ -1,57 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent"
-              android:orientation="vertical">
-
-    <!--<android.support.v4.widget.SwipeRefreshLayout
-        android:id="@+id/srl"
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/sv"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <com.caesar.checkdemo.ui.ListenedScrollView
-            android:id="@+id/sv"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        >
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
 
-            <LinearLayout
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NestScrollView嵌套RecyclerView"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="25dp"
+                android:textSize="25sp"
+                android:textColor="#d85a60"
+                />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_nested_list"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                >
+                android:layout_height="match_parent">
 
-                <TextView
-                    android:id="@+id/tv_hide_footer"
-                    android:layout_width="match_parent"
-                    android:layout_height="235dp"
-                    android:background="#f9f1f1"
-                    android:gravity="center"
-                    android:text="隐藏脚布局"
-                    />
-
-                <android.support.v7.widget.RecyclerView
-                    android:id="@+id/rv_nested_list"
-                    android:layout_width="match_parent"
-                    android:layout_height="300dp">
-
-                </android.support.v7.widget.RecyclerView>
-
+            </android.support.v7.widget.RecyclerView>
             </LinearLayout>
-        </com.caesar.checkdemo.ui.ListenedScrollView>
-    </android.support.v4.widget.SwipeRefreshLayout>-->
+        </android.support.v4.widget.NestedScrollView>
 
-     <android.support.v4.widget.SwipeRefreshLayout
-         android:id="@+id/srl"
-         android:layout_width="match_parent"
-         android:layout_height="match_parent">
 
-         <android.support.v7.widget.RecyclerView
-             android:id="@+id/rv_nested_list"
-             android:layout_width="match_parent"
-             android:layout_height="match_parent">
 
-         </android.support.v7.widget.RecyclerView>
-
-     </android.support.v4.widget.SwipeRefreshLayout>
-
-</LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

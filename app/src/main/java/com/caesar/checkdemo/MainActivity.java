@@ -70,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this, PhotoSelectActivity.class));
                 break;
 
-            case R.id.bt_recycler_scroll://ScrollView嵌套RecyclerView
+            case R.id.bt_recycler_scroll://TwinklingRefreshLayout实现下拉刷新
                 startActivity(new Intent(MainActivity.this, RefreshAndRecyclerActivity.class));
                 break;
 

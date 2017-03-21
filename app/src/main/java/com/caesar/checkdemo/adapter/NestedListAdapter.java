@@ -1,16 +1,16 @@
 package com.caesar.checkdemo.adapter;
 
 import android.content.Context;
+import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.TextView;
 
-import com.bumptech.glide.Glide;
 import com.caesar.checkdemo.R;
 import com.caesar.checkdemo.model.ProductionManageInfo;
-import com.caesar.checkdemo.ui.FullyGridLayoutManager;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -22,11 +22,9 @@ import java.util.List;
  */
 public class NestedListAdapter extends RecyclerView.Adapter<NestedListAdapter.ViewHolder> {
     private Context mContext;
-    private List<ProductionManageInfo.DataEntity> mData = new ArrayList<>();
 
-    public NestedListAdapter(Context mContext, List<ProductionManageInfo.DataEntity> mData) {
+    public NestedListAdapter(Context mContext) {
         this.mContext = mContext;
-        this.mData = mData;
     }
 
     @Override
@@ -38,29 +36,29 @@ public class NestedListAdapter extends RecyclerView.Adapter<NestedListAdapter.Vi
 
     @Override
     public void onBindViewHolder(final ViewHolder viewHolder, final int i) {
-        viewHolder.rv.setLayoutManager(new FullyGridLayoutManager(mContext, 4));
-        viewHolder.rv.setAdapter(new OtherAdapter(mContext, mData.get(i).getImage_list()));
-        ALog.i("-----size"+mData.get(i).getImage_list().size());
+        viewHolder.mTvContent.setText("测试"+i);
+        viewHolder.rv.setLayoutManager(new LinearLayoutManager(mContext));
+        viewHolder.rv.setAdapter(new OtherAdapter(mContext));
     }
 
     @Override
     public int getItemCount() {
         // 返回数据总数
-        return mData == null ? 0 : mData.size();
+        //return mData == null ? 0 : mData.size();
+        return 8;
     }
 
     // 重写的自定义ViewHolder
     public static class ViewHolder extends RecyclerView.ViewHolder {
+        public TextView mTvContent;
         public RecyclerView rv;
 
         public ViewHolder(View v) {
             super(v);
             rv = (RecyclerView) v.findViewById(R.id.nrv);
+            mTvContent = (TextView) v.findViewById(R.id.tv_test);
         }
     }
-
-
-
 
 
 
@@ -73,9 +71,8 @@ public class NestedListAdapter extends RecyclerView.Adapter<NestedListAdapter.Vi
         private Context mContext;
         private List<ProductionManageInfo.DataEntity.ImageListEntity> mImages = new ArrayList<>();
 
-        public OtherAdapter(Context mContext, List<ProductionManageInfo.DataEntity.ImageListEntity> mImages) {
+        public OtherAdapter(Context mContext) {
             this.mContext = mContext;
-            this.mImages = mImages;
         }
 
         @Override
@@ -87,16 +84,14 @@ public class NestedListAdapter extends RecyclerView.Adapter<NestedListAdapter.Vi
 
         @Override
         public void onBindViewHolder(final ViewHolder viewHolder, final int i) {
-            Glide.with(mContext)
-                    .load(mImages.get(i).getImg())
-                    .thumbnail( 0.1f )//表示为原图的十分之一
-                    .into(viewHolder.iv_nested_other);
+
         }
 
         @Override
         public int getItemCount() {
             // 返回数据总数
-            return mImages == null ? 0 : mImages.size();
+           // return mImages == null ? 0 : mImages.size();
+            return 8;
         }
 
         // 重写的自定义ViewHolder

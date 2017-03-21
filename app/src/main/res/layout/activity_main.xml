@@ -25,6 +25,7 @@
                 android:background="@color/colorPrimaryDark"
                 android:padding="10dp"
                 android:text="popupWindow"
+                android:inputType="text"
                 android:textColor="@color/white"
                 android:textSize="20dp"
                 />
@@ -106,7 +107,8 @@
                 android:layout_marginTop="5dp"
                 android:background="#364444"
                 android:padding="10dp"
-                android:text="ScrollView嵌套RecyclerView"
+                android:text="RecyclerView下拉刷新"
+                android:inputType="text"
                 android:textColor="@color/white"
                 android:textSize="20dp"
                 />
