@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    >
+
+    <!--显示框-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#414C6C"
+        android:layout_margin="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        >
+
+       <EditText
+            android:id="@+id/et_ticket_input"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="8"
+            android:layout_marginLeft="10dp"
+            android:singleLine="true"
+            android:background="@null"
+            android:inputType="number"
+            android:textColorHint="#a2a4a7"
+            android:textColor="@color/white"
+            android:textSize="38sp"
+            />
+
+        <ImageView
+            android:id="@+id/iv_delete"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:src="@drawable/huishan_btn"
+            />
+
+    </LinearLayout>
+
+    <!--输入键盘-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            >
+
+            <Button
+                android:id="@+id/bt1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#f1f1f1"
+                android:text="1"
+                android:textSize="36sp"
+                android:textColor="#1b1c1e"
+                />
+
+            <View
+                android:layout_width="2px"
+                android:layout_height="match_parent"
+                android:background="#cccccc"
+                />
+
+            <Button
+                android:id="@+id/bt2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#f1f1f1"
+                android:text="2"
+                android:textSize="36sp"
+                android:textColor="#1b1c1e"
+                />
+
+            <View
+                android:layout_width="2px"
+                android:layout_height="match_parent"
+                android:background="#cccccc"
+                />
+
+            <Button
+                android:id="@+id/bt3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#f1f1f1"
+                android:text="3"
+                android:textSize="36sp"
+                android:textColor="#1b1c1e"
+                />
+
+        </LinearLayout>
+
+        <!--分割线-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="#cccccc"
+            />
+
+        <!--4.5.6-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            >
+
+            <Button
+                android:id="@+id/bt4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#f1f1f1"
+                android:text="4"
+                android:textSize="36sp"
+                android:textColor="#1b1c1e"
+                />
+
+            <View
+                android:layout_width="2px"
+                android:layout_height="match_parent"
+                android:background="#cccccc"
+                />
+
+            <Button
+                android:id="@+id/bt5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#f1f1f1"
+                android:text="5"
+                android:textSize="36sp"
+                android:textColor="#1b1c1e"
+                />
+
+            <View
+                android:layout_width="2px"
+                android:layout_height="match_parent"
+                android:background="#cccccc"
+                />
+
+            <Button
+                android:id="@+id/bt6"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#f1f1f1"
+                android:text="6"
+                android:textSize="36sp"
+                android:textColor="#1b1c1e"
+                />
+
+        </LinearLayout>
+
+        <!--分割线-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="#cccccc"
+            />
+
+        <!--7.8.9-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            >
+
+            <Button
+                android:id="@+id/bt7"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#f1f1f1"
+                android:text="7"
+                android:textSize="36sp"
+                android:textColor="#1b1c1e"
+                />
+
+            <View
+                android:layout_width="2px"
+                android:layout_height="match_parent"
+                android:background="#cccccc"
+                />
+
+            <Button
+                android:id="@+id/bt8"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#f1f1f1"
+                android:text="8"
+                android:textSize="36sp"
+                android:textColor="#1b1c1e"
+                />
+
+            <View
+                android:layout_width="2px"
+                android:layout_height="match_parent"
+                android:background="#cccccc"
+                />
+
+            <Button
+                android:id="@+id/bt9"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#f1f1f1"
+                android:text="9"
+                android:textSize="36sp"
+                android:textColor="#1b1c1e"
+                />
+
+        </LinearLayout>
+
+        <!--分割线-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="#cccccc"
+            />
+
+        <!--0.核销-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            >
+
+            <Button
+                android:id="@+id/bt0"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#f1f1f1"
+                android:text="0"
+                android:textSize="36sp"
+                android:textColor="#1b1c1e"
+                />
+
+            <View
+                android:layout_width="2px"
+                android:layout_height="match_parent"
+                android:background="#cccccc"
+                />
+
+            <Button
+                android:id="@+id/bt_point"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#f1f1f1"
+                android:text="."
+                android:textSize="36sp"
+                android:textColor="#1b1c1e"
+                />
+
+            <View
+                android:layout_width="2px"
+                android:layout_height="match_parent"
+                android:background="#cccccc"
+                />
+
+            <Button
+                android:id="@+id/bt_hx"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#D5B369"
+                android:text="核销"
+                android:textSize="36sp"
+                android:textColor="@color/white"
+                />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            >
+
+            <Button
+                android:id="@+id/bt_pop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:padding="10dp"
+                android:text="popupWindow"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                />
+
+            <Button
+                android:id="@+id/bt_single"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/orange"
+                android:padding="10dp"
+                android:text="单选列表"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                />
+
+            <Button
+                android:id="@+id/bt_more"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@color/pink"
+                android:padding="10dp"
+                android:text="多选列表"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                />
+
+            <Button
+                android:id="@+id/bt_more2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@color/pink"
+                android:padding="10dp"
+                android:text="多选列表加强版"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                />
+
+            <Button
+                android:id="@+id/bt_calendar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="#3377ff"
+                android:padding="10dp"
+                android:text="日历"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                />
+
+            <Button
+                android:id="@+id/bt_large_photo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="#334b2f"
+                android:padding="10dp"
+                android:text="大图预览"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                />
+
+            <Button
+                android:id="@+id/bt_select_photo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="#3f4b2f"
+                android:text="相册图片选择"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                />
+
+            <Button
+                android:id="@+id/bt_recycler_scroll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="#364444"
+                android:padding="10dp"
+                android:text="ScrollView嵌套RecyclerView"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                />
+
+            <Button
+                android:id="@+id/bt_nested_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="#364444"
+                android:padding="10dp"
+                android:text="列表嵌套解决方案"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                />
+
+            <Button
+                android:id="@+id/bt_keyboard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="#339999"
+                android:padding="10dp"
+                android:text="自定义键盘输入"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                />
+
+            <Button
+                android:id="@+id/bt_dialog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="#3f5555"
+                android:padding="10dp"
+                android:text="自定义对话框"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                />
+
+            <Button
+                android:id="@+id/bt_handler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="#3f5555"
+                android:padding="10dp"
+                android:text="Hander使用详解"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                />
+
+            <!--动态添加布局-->
+            <LinearLayout
+                android:id="@+id/ll_add_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:background="#343fb5"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="动态添加布局"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>
