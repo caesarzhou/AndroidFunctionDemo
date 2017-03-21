@@ -54,7 +54,7 @@ public class PopupWindowActivity extends AppCompatActivity {
     }
 
     /**
-     * 获取PopipWinsow实例
+     * 获取PopupWindow实例
      */
     private void getPopupWindow() {
         if (null != popupWindow) {
