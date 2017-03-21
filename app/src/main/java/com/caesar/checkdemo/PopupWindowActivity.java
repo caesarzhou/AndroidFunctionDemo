@@ -12,7 +12,7 @@ import android.widget.PopupWindow;
 import com.caesar.checkdemo.utils.CountDownTimerUtil;
 
 /**
- * 弹出对话框popupWindow
+ * 弹出对话框popupWindow详解
  * Created by caesar on 2017/3/10.
  * 修订历史:
  */
